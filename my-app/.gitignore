@@ -1,0 +1,47 @@
+# --- DEPENDENCIAS ---
+node_modules/
+.pnp
+.pnp.js
+
+
+# --- NEXT.JS (Builds y Caché) ---
+# Es vital ignorar esto, pesa mucho y se genera solo
+.next/
+out/
+build/
+dist/
+
+# --- SEGURIDAD Y VARIABLES DE ENTORNO ---
+# ¡NUNCA subir esto! Contiene tus API Keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+.DS_Store
+Thumbs.db
+
+# --- LOGS DE ERRORES ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- IDE Y SISTEMA OPERATIVO ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- VERCEL (Si usaras Vercel) ---
+.vercel/
+
+# --- Ejecutables y Herramientas Locales (¡IMPORTANTE!) ---
+ngrok.exe
+ngrok
+
+# --- TYPESCRIPT ---
+*.tsbuildinfo
+next-env.d.ts

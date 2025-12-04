@@ -1,0 +1,65 @@
+# Dependencias (Se instalan con npm install, no se suben)
+node_modules/
+yarn.lock
+
+# Logs de errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Archivos de Sistema Operativo (Basura)
+.DS_Store
+Thumbs.db
+
+# Configuración de Editor (VS Code)
+.vscode/
+.idea/
+
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Credenciales de Firma Perú (RENIEC)
+fwAuthorization.json
+backend/fwAuthorization.json
+
+# ==========================================
+# 3. BACKEND (Node.js / Express / Uploads)
+# ==========================================
+# Ignorar los archivos PDF subidos, pero MANTENER las carpetas
+backend/uploads/temporal/*
+!backend/uploads/temporal/.gitkeep
+
+backend/uploads/permanente/*
+!backend/uploads/permanente/.gitkeep
+
+backend/uploads/firmados/*
+!backend/uploads/firmados/.gitkeep
+
+# Otros
+backend/coverage/
+backend/dist/
+.DS_Store
+Thumbs.db
+# ==========================================
+# 4. FRONTEND (Next.js)
+# ==========================================
+# Build de producción
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+ngrok.exe
+ngrok
+
+# Cache de Next.js
+frontend/.vercel/
+
+# Archivos temporales de TypeScript
+*.tsbuildinfo
+uploads/
